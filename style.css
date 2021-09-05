@@ -1,0 +1,353 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  background: #131419;
+  overflow: hidden;
+}
+
+.container .circle {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: -100px;
+  border-radius: 50%;
+  width: 600px;
+  height: 600px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f00), to(#f0f));
+  background: linear-gradient(#f00, #f0f);
+}
+
+.container .main-section {
+  overflow: hidden;
+  position: relative;
+  min-width: 300px;
+  max-width: 1600px;
+  width: 850px;
+  min-height: 100vh;
+  margin: 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05), 5px 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05), 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container .main-section .resume {
+  height: 100%;
+  -ms-grid-rows: min-content 1fr;
+      grid-template-rows: -webkit-min-content 1fr;
+      grid-template-rows: min-content 1fr;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.container .main-section .resume .header {
+  grid-column: 1 / -1;
+  height: 300px;
+  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 10px 10px;
+}
+
+.container .main-section .resume .profile {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .main-section .resume .profile .photo {
+  padding: 30px;
+}
+
+.container .main-section .resume .profile .photo img {
+  width: 100%;
+}
+
+.container .main-section .resume .profile .details {
+  padding: 30px;
+}
+
+.container .main-section .resume .profile .details .my-info {
+  margin-bottom: 20px;
+}
+
+.container .main-section .resume .profile .details .name {
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  background-image: -webkit-gradient(linear, left top, right top, from(#00dbde), to(#fc00ff));
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+}
+
+.container .main-section .resume .profile .details .degree {
+  font-size: 18px;
+  padding: 0 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#00dbde), to(#fc00ff));
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  text-transform: capitalize;
+}
+
+.container .main-section .resume .profile .details .email a,
+.container .main-section .resume .profile .details .phone a,
+.container .main-section .resume .profile .details .location {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.container .main-section .resume .main-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+}
+
+.container .main-section .resume .main-content .left-block,
+.container .main-section .resume .main-content .right-block {
+  border-radius: 10px;
+  min-height: 400px;
+  -webkit-box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.05), inset 2px 2px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.05), inset 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.container .main-section .resume .main-content .left-block {
+  margin: 0 5px 25px 10px;
+}
+
+.container .main-section .resume .main-content .right-block {
+  margin: 0 10px 25px 5px;
+}
+
+.container .main-section .resume .main-content .card {
+  position: relative;
+  margin: 15px;
+  border-radius: 10px;
+  min-height: 200px;
+  -webkit-box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05), 5px 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05), 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container .main-section .resume .main-content .content {
+  padding: 15px;
+}
+
+.container .main-section .resume .main-content .content h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-align: end;
+  font-size: 28px;
+  background-color: #8ec5fc;
+  background-color: #ffe53b;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  font-family: "Lato", sans-serif;
+}
+
+.container .main-section .resume .main-content .content .skills {
+  margin-top: 50px;
+}
+
+.container .main-section .resume .main-content .content .skills .skill-list {
+  padding-left: 15px;
+  color: #fff;
+  font-size: 12px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-family: "Lato", sans-serif;
+}
+
+.container .main-section .resume .main-content .content .education {
+  margin-top: 50px;
+}
+
+.container .main-section .resume .main-content .content .education .edu-details span {
+  font-size: 18px;
+  padding: 0 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#00dbde), to(#fc00ff));
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  text-transform: capitalize;
+}
+
+.container .main-section .resume .main-content .content .education .edu-details h3 {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-family: "Lato", sans-serif;
+  text-transform: capitalize;
+}
+
+.container .main-section .resume .main-content .content .education .edu-details p {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 5px;
+  letter-spacing: 2px;
+  font-family: "Lato", sans-serif;
+  text-transform: capitalize;
+}
+
+.container .main-section .resume .main-content .content .projects {
+  margin-top: 50px;
+}
+
+.container .main-section .resume .main-content .content .projects .project-details:last-child {
+  margin-top: 45px;
+}
+
+.container .main-section .resume .main-content .content .projects .project-details span {
+  font-size: 18px;
+  padding: 0 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#00dbde), to(#fc00ff));
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  text-transform: capitalize;
+}
+
+.container .main-section .resume .main-content .content .projects .project-details span.project-short-des {
+  background-image: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 0;
+  line-height: 30px;
+  letter-spacing: 2px;
+  font-family: "Lato", sans-serif;
+  text-transform: capitalize;
+}
+
+.container .main-section .resume .main-content .content .projects .project-details .project-des {
+  margin-top: 10px;
+  padding-left: 15px;
+  color: #fff;
+  font-size: 12px;
+  text-transform: capitalize;
+  text-align: justify;
+  letter-spacing: 2px;
+  font-family: "Lato", sans-serif;
+}
+
+.container .main-section .resume .main-content .content .work {
+  margin-top: 50px;
+}
+
+.container .main-section .resume .main-content .content .work .work-details span {
+  font-size: 18px;
+  padding: 0 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#00dbde), to(#fc00ff));
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  text-transform: capitalize;
+}
+
+.container .main-section .resume .main-content .content .work .work-details span.work-dates {
+  background-image: none;
+  color: #fff;
+  font-size: 12px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  font-family: "Lato", sans-serif;
+  text-transform: capitalize;
+}
+
+.container .main-section .resume .main-content .content .work .work-details a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  font-family: "Lato", sans-serif;
+  text-transform: capitalize;
+}
+
+.container .main-section .resume .main-content .content .work .work-des {
+  margin-top: 15px;
+}
+
+.container .main-section .resume .main-content .content .work .work-des .work-task {
+  color: #fff;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  font-family: "Lato", sans-serif;
+  text-transform: capitalize;
+}
+
+.container .main-section .resume .main-content .content .work .work-des ul {
+  margin-top: 10px;
+  padding-left: 15px;
+  color: #fff;
+  font-size: 12px;
+  text-transform: capitalize;
+  text-align: justify;
+  letter-spacing: 2px;
+  font-family: "Lato", sans-serif;
+}
+
+.container .main-section .resume .main-content .content .certificates {
+  margin-top: 45px;
+}
+
+.container .main-section .resume .main-content .content .certificates .certificate-list:last-child {
+  margin-top: 45px;
+}
+
+.container .main-section .resume .main-content .content .certificates .certificate-list span {
+  font-size: 18px;
+  padding: 0 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#00dbde), to(#fc00ff));
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  text-transform: capitalize;
+}
+
+.container .main-section .resume .main-content .content .certificates .certificate-list span.certificate-des {
+  background-image: none;
+  color: #fff;
+  padding: 0;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-family: "Lato", sans-serif;
+}
+
+.container .main-section .resume .main-content .content .certificates .certificate-list .certificate-info {
+  margin-top: 15px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
