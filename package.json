@@ -1,0 +1,24 @@
+{
+  "name": "valuebound-html-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://nishad8898.github.io/valuebound-html-assignment",
+  "main": "index.html",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nishad8898/valuebound-html-assignment.git"
+  },
+  "author": "sachin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nishad8898/valuebound-html-assignment/issues"
+  },
+  "homepage": "https://github.com/nishad8898/valuebound-html-assignment#readme"
+}

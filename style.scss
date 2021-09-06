@@ -24,7 +24,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     @media only screen and (max-width: 26.5625em) {
       @content;
     }
-  } //320px
+  } //425px
 
   @if $breakpoint == phone {
     @media only screen and (max-width: 37.5em) {
@@ -56,7 +56,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   // font-family: "Orbitron", sans-serif;
 }
 
-::selection {
+a {
+  text-decoration: none;
+  color: #131419;
 }
 
 html {
@@ -100,6 +102,11 @@ body {
       right: -16%;
     }
 
+    @include respond(phone) {
+      top: -20%;
+      right: -60%;
+    }
+
     @include respond(small-phone) {
       top: -20%;
       right: -60%;
@@ -120,6 +127,10 @@ body {
 
     @include respond(tab-port) {
       width: auto;
+    }
+
+    @include respond(phone) {
+      margin: 1.5rem;
     }
 
     @include respond(small-phone) {
@@ -146,6 +157,13 @@ body {
         margin-bottom: 3rem;
         height: auto;
 
+        @include respond(phone) {
+          justify-items: center;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(2, 1fr);
+          margin-bottom: 2rem;
+        }
+
         @include respond(small-phone) {
           justify-items: center;
           grid-template-columns: 1fr;
@@ -156,6 +174,12 @@ body {
         .photo {
           padding: 3rem;
 
+          @include respond(phone) {
+            width: 100%;
+            text-align: center;
+            padding: 0;
+          }
+
           @include respond(small-phone) {
             width: 100%;
             text-align: center;
@@ -165,6 +189,10 @@ body {
           img {
             width: 100%;
 
+            @include respond(phone) {
+              width: 20rem;
+            }
+
             @include respond(small-phone) {
               width: 20rem;
             }
@@ -173,6 +201,11 @@ body {
 
         .details {
           padding: 3rem;
+
+          @include respond(phone) {
+            padding: 0;
+            text-align: center;
+          }
 
           @include respond(small-phone) {
             padding: 0;
@@ -208,6 +241,10 @@ body {
           .email,
           .phone,
           .location {
+            @include respond(phone) {
+              padding-bottom: 0.5rem;
+            }
+
             @include respond(small-phone) {
               padding-bottom: 0.5rem;
             }
@@ -231,6 +268,10 @@ body {
         grid-template-rows: 1fr;
         grid-template-columns: repeat(2, 50%);
 
+        @include respond(phone) {
+          grid-template-columns: 1fr;
+        }
+
         @include respond(small-phone) {
           grid-template-columns: 1fr;
         }
@@ -246,6 +287,10 @@ body {
         .left-block {
           margin: 0 0.5rem 2.5rem 1rem;
 
+          @include respond(phone) {
+            margin: 1rem;
+          }
+
           @include respond(small-phone) {
             margin: 1rem;
           }
@@ -253,6 +298,11 @@ body {
 
         .right-block {
           margin: 0 1rem 2.5rem 0.5rem;
+
+          @include respond(phone) {
+            margin: 1rem;
+            margin-top: 0;
+          }
 
           @include respond(small-phone) {
             margin: 1rem;
@@ -383,6 +433,10 @@ body {
 
           .work {
             margin-top: 5rem;
+
+            @include respond(phone) {
+              margin-top: 7rem;
+            }
 
             @include respond(small-phone) {
               margin-top: 7rem;

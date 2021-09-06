@@ -27,6 +27,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
   font-family: "Poppins", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #131419;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -79,6 +84,13 @@ body {
   }
 }
 
+@media only screen and (max-width: 37.5em) {
+  .container .circle {
+    top: -20%;
+    right: -60%;
+  }
+}
+
 @media only screen and (max-width: 26.5625em) {
   .container .circle {
     top: -20%;
@@ -102,6 +114,12 @@ body {
 @media only screen and (max-width: 56.25em) {
   .container .main-section {
     width: auto;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .container .main-section {
+    margin: 1.5rem;
   }
 }
 
@@ -140,6 +158,17 @@ body {
   height: auto;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .container .main-section .resume .profile {
+    justify-items: center;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 2rem;
+  }
+}
+
 @media only screen and (max-width: 26.5625em) {
   .container .main-section .resume .profile {
     justify-items: center;
@@ -155,6 +184,14 @@ body {
   padding: 3rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .container .main-section .resume .profile .photo {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+}
+
 @media only screen and (max-width: 26.5625em) {
   .container .main-section .resume .profile .photo {
     width: 100%;
@@ -167,6 +204,12 @@ body {
   width: 100%;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .container .main-section .resume .profile .photo img {
+    width: 20rem;
+  }
+}
+
 @media only screen and (max-width: 26.5625em) {
   .container .main-section .resume .profile .photo img {
     width: 20rem;
@@ -175,6 +218,13 @@ body {
 
 .container .main-section .resume .profile .details {
   padding: 3rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .container .main-section .resume .profile .details {
+    padding: 0;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 26.5625em) {
@@ -208,6 +258,14 @@ body {
   text-transform: capitalize;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .container .main-section .resume .profile .details .email,
+  .container .main-section .resume .profile .details .phone,
+  .container .main-section .resume .profile .details .location {
+    padding-bottom: 0.5rem;
+  }
+}
+
 @media only screen and (max-width: 26.5625em) {
   .container .main-section .resume .profile .details .email,
   .container .main-section .resume .profile .details .phone,
@@ -236,6 +294,13 @@ body {
       grid-template-columns: repeat(2, 50%);
 }
 
+@media only screen and (max-width: 37.5em) {
+  .container .main-section .resume .main-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 @media only screen and (max-width: 26.5625em) {
   .container .main-section .resume .main-content {
     -ms-grid-columns: 1fr;
@@ -255,6 +320,12 @@ body {
   margin: 0 0.5rem 2.5rem 1rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .container .main-section .resume .main-content .left-block {
+    margin: 1rem;
+  }
+}
+
 @media only screen and (max-width: 26.5625em) {
   .container .main-section .resume .main-content .left-block {
     margin: 1rem;
@@ -263,6 +334,13 @@ body {
 
 .container .main-section .resume .main-content .right-block {
   margin: 0 1rem 2.5rem 0.5rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .container .main-section .resume .main-content .right-block {
+    margin: 1rem;
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width: 26.5625em) {
@@ -387,6 +465,12 @@ body {
 
 .container .main-section .resume .main-content .content .work {
   margin-top: 5rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .container .main-section .resume .main-content .content .work {
+    margin-top: 7rem;
+  }
 }
 
 @media only screen and (max-width: 26.5625em) {
